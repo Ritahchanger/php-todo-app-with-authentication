@@ -1,28 +1,31 @@
 <?php include("header.php") ?>
-    <div class="container">
-    <h2 class="form_title">SIGN UP</h2>
-      <form action="#" autocomplete="off" novalidate>
-
-      <div class="row" style="display:flex;">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Firstname" name="fname">
-            </div>
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Lastname" name="lname">
-            </div>
+    <div class="container" style="max-width:1000px;">
+    <form action="signup.php" method="POST">
+      <a href="#" class="form_title">SIGN UP</a>
+      <hr>
+      <div class="row" style="margin-top:1rem;">
+        <div class="input_form">
+            <input type="text" name="fname" placeholder="Enter your firstname">
+        </div>
+        <div class="input_form">
+            <input type="text" name="email" placeholder="Enter your secondname">
+        </div>
       </div>
-      <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email" name="email">
+      <div class="input_form">
+        <input type="text" name="idno" placeholder="Enter your id no">
       </div>
-      <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password" name="password">
+      <div class="input_form">
+        <input type="email" name="email" placeholder="Enter your firstname">
       </div>
-      <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Confirm password" name="conpassword">
+      <div class="input_form">
+        <input type="email" name="email" placeholder="Enter your password">
       </div>
-
-      <input type="submit" value="LOGIN" name="submit" class="login_main">
-      <span><a href="todo_home.php">Have account?</a>-<a href="login.php">Login</a></span>
-      </form>
+      <div class="input_form">
+        <input type="password" name="conpassword" placeholder="Confirm your password">
+      </div>
+      <input type="submit" value="SIGNUP" name="name">
+      <span><a href="#">Have account</a>-<a href="login.php">Login</a></span>
+    </form>
     </div>
+<script src="main.js"></script>
 <?php include("footer.php") ?>
