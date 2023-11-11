@@ -51,9 +51,28 @@ input[type=submit]:hover{
     display:flex;
     justify-content:space-between;
 }
-.row .input_form{
+.sign_up_form  .row .input_form{
     flex-basis:49%;
+    position:relative;
+    margin:0rem 1rem;
 }
+.error{
+    color:red;
+    position: absolute;
+    left:0;
+    bottom:-1rem;
+    display:none;
+}
+
+
+
+/* SIGN UP FORM */
+.sign_up_form .input_form{
+    position:relative;
+    margin:1rem;
+}
+
+
 
 @media(max-width=400px){
 
